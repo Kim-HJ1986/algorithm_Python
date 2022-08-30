@@ -14,17 +14,19 @@ class LinkedList:
             cur = cur.next
         cur.next = Node(value)
 
-def return_str(self):
-    strVal=""
-    node = self.head
+
+def return_str(linked_list):
+    str_val = ""
+    node = linked_list.head
     while True:
-        strVal += str(node.data)
+        str_val += str(node.data)
         node = node.next
         if node is None:
             break
-    return strVal
+    return str_val
 
-def get_linked_list_sum(linked_list_1, linked_list_2):
+
+def get_linked_list_sum():
     list_sum_1 = return_str(linked_list_1)
     list_sum_2 = return_str(linked_list_2)
     sum = int(list_sum_1) + int(list_sum_2)
@@ -39,4 +41,4 @@ linked_list_2 = LinkedList(3)
 linked_list_2.append(5)
 linked_list_2.append(4)
 
-print(get_linked_list_sum(linked_list_1, linked_list_2))
+print(get_linked_list_sum())

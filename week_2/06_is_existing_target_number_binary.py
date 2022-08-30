@@ -1,6 +1,7 @@
 finding_target = 16
 finding_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
 
+
 # 이진 탐색 (binary search) 시간복잡도 -> O(lonN)
 def is_existing_target_number_binary(target, array):
     cur_min_idx = 0
